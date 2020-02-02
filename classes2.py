@@ -24,17 +24,16 @@ class Car():
 class ElectricCar(Car):
     """Model to represent the electric cars"""
 
-    def __init__(self, make, model, year, battery=100): # self refers current class
+    def __init__(self, make, model, year, battery_size=100): # self refers current class
         super().__init__(make, model, year)  # super refers parent class
-        self.battery = battery_size
-    
+        self.battery_size = battery_size    
     
     # METHOD/FUNCTION OVERRIDING
     def description(self):
         msg = f"Car info: make:{self.make}"
         msg += f"model: {self.model}"
         msg += f"year: {self.year}"
-        msg += f" battery capacity {self.battery}-kWh."
+        msg += f" battery capacity {self.battery_size}-kWh."
         print(msg)
 
 # instanciating classes
