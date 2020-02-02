@@ -47,6 +47,24 @@ print(sharik.run())
 
 
 
-        
-        
+class Car():
+
+    year = 2020
+
+    def __init__(self, color):
+        self.color = color
+
+    def car_description(self):
+        print(f"describing the car: \ncolor: {self.color}\nyear:{self.year}")
+
+
+bmw = Car('black')        
+lexus = Car('White')
+
+
+
+print(bmw.car_description())
+print(lexus.car_description())
+
+
 
